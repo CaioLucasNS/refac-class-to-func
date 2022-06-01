@@ -1,4 +1,4 @@
-type FoodTypes = {
+export interface FoodTypes {
   isOpen: boolean;
   setIsOpen: () => void;
 }
