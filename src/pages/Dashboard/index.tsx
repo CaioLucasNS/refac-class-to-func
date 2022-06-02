@@ -6,15 +6,7 @@ import Food from "../../components/Food";
 import ModalAddFood from "../../components/ModalAddFood";
 import ModalEditFood from "../../components/ModalEditFood";
 import { FoodsContainer } from "./styles";
-
-interface IFood {
-  id: string;
-  available: boolean;
-  description: string;
-  image: string;
-  name: string;
-  price: string;
-}
+import { IFood } from "../../types/FoodTypes";
 
 const Dashboard = () => {
   const [foods, setFoods] = useState<IFood[]>([]);
